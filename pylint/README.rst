@@ -1,4 +1,4 @@
-﻿Sprint RoPython #3 - 28 februarie 2015
+Sprint RoPython #3 - 28 februarie 2015
 ======================================
 
 Mai jos sunt o serie de issues ușoare, potrivite pentru cei care nu știu
