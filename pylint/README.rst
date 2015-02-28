@@ -91,6 +91,8 @@ assigned to: vtemian
 
 * https://bitbucket.org/logilab/pylint/issue/437/false-positive-e1601-print-statement-used
 
+assigned to: Claudiu Popa
+
   print-statement este un mesaj ce este emis în cadrul verificatorului de compatibilitate
   python3.py. Acesta se activează prin flagul --py3k și toate mesajele vor fi dezactivate,
   mai puțin ale lui. Bugul de mai sus este legat de alt mod, error mode, activat prin flagul -E / --errors-only.
