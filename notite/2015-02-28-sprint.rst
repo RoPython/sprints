@@ -16,3 +16,7 @@ Cu tematica mai concreta ("cum sa iti instalezi Python si sa faci <obiectiv>"):
 * Twitter clone (Django howto)
 * Pentesting cu Python (cum sa folosesti Python sa gasesti probleme de securitate)
 * 
+
+Idei de organizare:
+
+* Locatii: ceva mai izolat (eg: cabana, acasa la cineva).
