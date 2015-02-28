@@ -193,12 +193,6 @@ Alte functionalități dorite (și alte issues mai grele)
 
     [i for i in range(10)]
     print(i)
-
-* ``list.sort(cmp=..)/sorted(cmp=...)``::
-
-    list.sort(cmp=func)
-
-  (Claudiu Popa)
   
 * Indexing bytes using type inference::
 
@@ -249,3 +243,13 @@ Alte functionalități dorite (și alte issues mai grele)
   atunci putem să ne uităm după valori din type.
   
 * Trebuie scoase mesajele star-args, abstract-class-little-referenced, abstract-class-not-referenced.  
+
+
+Rezolvate
+---------
+
+* ``list.sort(cmp=..)/sorted(cmp=...)``::
+
+    list.sort(cmp=func)
+
+  (Claudiu Popa)
