@@ -25,6 +25,7 @@ assigned to: MihaiBalint
 
 
 * https://bitbucket.org/logilab/pylint/issue/431/arguments-differ-should-allow-addition-of
+assigned to: vtemian
 
   Trebuie  adăugat un flag prin care argumentele opționale să nu fie luate în  considerare atunci
   când se verifică checkul arguments-differ (dacă o  funcție A are doi parametri a și b, atunci o
