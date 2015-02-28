@@ -243,3 +243,5 @@ Alte functionalități dorite (și alte issues mai grele)
   pe metaclasă. Metaclasa poate fi aflată cu Class.metaclass(), dar ea va întoarce doar
   metaclasa setată explicit. Însă dacă știm că nodul clasă în cauză este new style class,
   atunci putem să ne uităm după valori din type.
+  
+* Trebuie scoase mesajele star-args, abstract-class-little-referenced, abstract-class-not-referenced.  
