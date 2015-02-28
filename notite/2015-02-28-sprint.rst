@@ -64,3 +64,7 @@ algoritmica, hackathons, contributor of the month
 Code Dojo
 ---------
 Implicare in Dojo-urile locale cu focus pe Python
+
+Meetups
+-------
+Toate intalniriile sa fie inregistrate
