@@ -90,16 +90,6 @@ assigned to: cmin764
   de diagrame UML dintr-un cod sursă. Trebuie modificat astfel încât proprietățile
   să fie detectate ca atribute, nu funcții.
 
-* https://bitbucket.org/logilab/pylint/issue/437/false-positive-e1601-print-statement-used
-
-assigned to: Claudiu Popa
-
-  print-statement este un mesaj ce este emis în cadrul verificatorului de compatibilitate
-  python3.py. Acesta se activează prin flagul --py3k și toate mesajele vor fi dezactivate,
-  mai puțin ale lui. Bugul de mai sus este legat de alt mod, error mode, activat prin flagul -E / --errors-only.
-  Acesta va dezactiva toate mesajele care nu sunt erori, dar nu se uită să vadă dacă o parte
-  din erorile activate pot fi emise în mod normal.
-
 * https://bitbucket.org/logilab/pylint/issue/420/html-report-unicodeencodeerror
 
 * https://bitbucket.org/logilab/pylint/issue/215/document-msg-template-as-replacement-for
@@ -256,3 +246,13 @@ Rezolvate
     list.sort(cmp=func)
 
   (Claudiu Popa)
+  
+  * https://bitbucket.org/logilab/pylint/issue/437/false-positive-e1601-print-statement-used
+
+  assigned to: Claudiu Popa
+
+  print-statement este un mesaj ce este emis în cadrul verificatorului de compatibilitate
+  python3.py. Acesta se activează prin flagul --py3k și toate mesajele vor fi dezactivate,
+  mai puțin ale lui. Bugul de mai sus este legat de alt mod, error mode, activat prin flagul -E / --errors-only.
+  Acesta va dezactiva toate mesajele care nu sunt erori, dar nu se uită să vadă dacă o parte
+  din erorile activate pot fi emise în mod normal.
