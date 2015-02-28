@@ -46,3 +46,16 @@ Propunere inițială pentru întrebări:
 * Dacă "altceva", ce?
 * Mai vii și la urmatorul eveniment? Da/Nu
 * Alte sugestii/reclamații/laude?
+
+Centru resurse Python
+---------------------
+
+O sectiune in ropython.org cu resurse pentru incepatori, dar care sa te ia de la 0 pana la un nivel in care
+poti sa iti alegit niste issues ale unor proiecte open-source(pylint/celery/CPython) si poti sa lucrezi pe ele.
+
+Un fel de CodeAcademy, mai avansat, care sa se termine ori cu un proiect, ori cu issues concrete pe proiecte open-source.
+
+
+Concursuri
+----------
+algoritmica, hackathons, contributor of the month
