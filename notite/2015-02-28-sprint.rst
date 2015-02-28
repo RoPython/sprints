@@ -68,3 +68,8 @@ Implicare in Dojo-urile locale cu focus pe Python
 Meetups
 -------
 Toate intalniriile sa fie inregistrate
+
+Sprints
+-------
+
+* categorie despre cum contribui la: pylint / CPython
