@@ -24,5 +24,5 @@ Idei de organizare:
 Prezentari
 ----------
 
-* Introduce in semantic web / RDF (Ana Ghiran <anamaria.ghiran@econ.ubbcluj.ro>)
-
+* Introduce in semantic web / RDF (Ana Ghiran <anamaria.ghiran@econ.ubbcluj.ro>).
+* Testare cu ``pytest``.
