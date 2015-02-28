@@ -20,3 +20,9 @@ Cu tematica mai concreta ("cum sa iti instalezi Python si sa faci <obiectiv>"):
 Idei de organizare:
 
 * Locatii: ceva mai izolat (eg: cabana, acasa la cineva).
+
+Prezentari
+----------
+
+* Introduce in semantic web / RDF (Ana Ghiran <anamaria.ghiran@econ.ubbcluj.ro>)
+
