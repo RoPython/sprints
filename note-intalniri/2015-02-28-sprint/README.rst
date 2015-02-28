@@ -73,3 +73,11 @@ Sprints
 -------
 
 * categorie despre cum contribui la: pylint / CPython
+* issues pe categori de oameni (incepatori / avansati)
+* sa ne vedem tot la 2 saptamani
+
+Workshops
+---------
+
+* cum contribui la open-source
+* programare concurenta
