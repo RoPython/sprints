@@ -13,6 +13,7 @@ Issues ușoare
 -------------
 
 * https://bitbucket.org/logilab/pylint/issue/422/create-a-ci-gate-for-analyzing-pylint
+assigned to: MihaiBalint
 
   Dacă  rulăm pylint peste code base-ul pylint, rezultă o mulțime de erori și  mesaje.
   Vrem să adăugăm un pas de bootstrapping în tox.ini, care să  ruleze pylint peste pylint.
