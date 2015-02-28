@@ -196,6 +196,8 @@ Alte functionalități dorite (și alte issues mai grele)
 
     list.sort(cmp=func)
 
+  (Claudiu Popa)
+  
 * Indexing bytes using type inference::
 
     b"something"[0]
