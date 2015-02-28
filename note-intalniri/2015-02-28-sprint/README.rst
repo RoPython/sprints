@@ -9,10 +9,13 @@ Idei pentru http://ropython.org
 
 Site static generat cu Pelican: locatiile ca si categorii, tipul evenimentului ca si taguri.
 
-Macheta:
+Macheta lista evenimente:
 
 .. image:: macheta-creion.png
-    :alt: macheta in creion
+
+Macheta eveniment:
+
+.. image:: macheta-creion-eveniment.png
 
 Idei de evenimente
 ==================
