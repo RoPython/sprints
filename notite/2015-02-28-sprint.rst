@@ -10,24 +10,24 @@ Idei de evenimente
 Bootcamp
 --------
 
-Cu tematica mai concreta ("cum sa iti instalezi Python si sa faci <obiectiv>"):
+Cu tematică mai concretă ("cum să iți instalezi Python și să faci <obiectiv>"):
 
-* Cum sa faci o pagina web
+* Cum să faci o pagina web
 * Twitter clone (Django howto)
-* Pentesting cu Python (cum sa folosesti Python sa gasesti probleme de securitate)
+* Pentesting cu Python (cum să folosești Python să găsești probleme de securitate)
 * Interfețe grafice (Tkinter, Qt, Kivy; chestiuni simpliste).
 
 Idei de organizare:
 
-* Locatii: ceva mai izolat (eg: cabana, acasa la cineva).
+* Locații: ceva mai izolat (eg: cabana, acasa la cineva).
 
 Prezentari
 ----------
 
-* Introduce in semantic web / RDF (Ana Ghiran <anamaria.ghiran@econ.ubbcluj.ro>).
-* Testare cu ``pytest``.
+* Introduce în semantic web / RDF (Ana Ghiran <anamaria.ghiran@econ.ubbcluj.ro>).
+* Testare cu ``pytest`` (Ionel).
 
-Formular de feedback pentru intalniri
+Formular de feedback pentru întâlniri
 -------------------------------------
 
 Ne putem înbunătăți evenimentele dacă am avea un formular de feedback.
