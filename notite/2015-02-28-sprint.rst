@@ -59,3 +59,8 @@ Un fel de CodeAcademy, mai avansat, care sa se termine ori cu un proiect, ori cu
 Concursuri
 ----------
 algoritmica, hackathons, contributor of the month
+
+
+Code Dojo
+---------
+Implicare in Dojo-urile locale cu focus pe Python
