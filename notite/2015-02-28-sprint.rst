@@ -12,7 +12,7 @@ Bootcamp
 
 Cu tematica mai concreta ("cum sa iti instalezi Python si sa faci <obiectiv>"):
 
-* Cum sa faci o pagina web 
+* Cum sa faci o pagina web
 * Twitter clone (Django howto)
 * Pentesting cu Python (cum sa folosesti Python sa gasesti probleme de securitate)
 * Interfețe grafice (Tkinter, Qt, Kivy; chestiuni simpliste).
@@ -26,3 +26,23 @@ Prezentari
 
 * Introduce in semantic web / RDF (Ana Ghiran <anamaria.ghiran@econ.ubbcluj.ro>).
 * Testare cu ``pytest``.
+
+Formular de feedback pentru intalniri
+-------------------------------------
+
+Ne putem înbunătăți evenimentele dacă am avea un formular de feedback.
+
+Propunere inițială pentru întrebări:
+
+* Evenimentul a atins obiectivele propuse? Da/Nu
+* Dacă "Nu", ce a lipsit?
+* Cum ți s-a părut evenimentul in general? [1-5]
+* Cum ți s-a părut spatiul/sala? [1-5]
+* Cum ți s-a părut mâncarea/băutura? [1-5]
+* Cum ți s-a părut prezetarea X? [1-5]
+* Cum ți s-a părut prezetarea Y? [1-5]
+* Cum ți s-a părut prezetarea Z? [1-5]
+* Cum ai aflat de eveniment? Meetup.com/Prieteni/Google/Listă de mail/IRC/User group/Facebook/Twitter/altceva
+* Dacă "altceva", ce?
+* Mai vii și la urmatorul eveniment? Da/Nu
+* Alte sugestii/reclamații/laude?
