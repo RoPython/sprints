@@ -1,0 +1,18 @@
+======
+Notițe
+======
+
+Notițe discuții de la sprint.
+
+Idei de evenimente
+==================
+
+Bootcamp
+--------
+
+Cu tematica mai concreta ("cum sa iti instalezi Python si sa faci <obiectiv>"):
+
+* Cum sa faci o pagina web 
+* Twitter clone (Django howto)
+* Pentesting cu Python (cum sa folosesti Python sa gasesti probleme de securitate)
+* 
