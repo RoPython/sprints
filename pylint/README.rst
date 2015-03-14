@@ -13,7 +13,6 @@ Issues ușoare
 -------------
 
 * https://bitbucket.org/logilab/pylint/issue/422/create-a-ci-gate-for-analyzing-pylint
-assigned to: MihaiBalint
 
   Dacă  rulăm pylint peste code base-ul pylint, rezultă o mulțime de erori și  mesaje.
   Vrem să adăugăm un pas de bootstrapping în tox.ini, care să  ruleze pylint peste pylint.
@@ -69,7 +68,6 @@ assigned to: vtemian
   Anumite mesaje nu trebuie emise dacă clasa în care se află metoda sau atributul respectiv este un Mixin.
 
 * https://bitbucket.org/logilab/pylint/issue/449/require-or-allow-providing-justification
-assigned to: cmin764
 
   Trebuie adăugat suport pentru posibilitatea de a continua un pragma message cu ;.
   Următoarele trebuie permise::
