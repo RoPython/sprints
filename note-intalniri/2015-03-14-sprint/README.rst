@@ -56,13 +56,11 @@ Idee de la Claudiu, suport de breakpoints:
 
 .. sourcecode:: python
 
-    from tracerex import break_on
-
-    break_on(F(function="visit_lambda"))
+    install(function="visit_lambda", action="break")
 
     # sau mai selectiv, cu un predicat
 
-    break_on(F(function="visit_lambda", predicate=lambda module, function, locals: locals["node"] == "Foobar"]))
+    install(function="visit_lambda", action="break", predicate=lambda module, function, locals: locals["node"] == "Foobar"]))
 
 Idee de "actiuni":
 
@@ -105,6 +103,52 @@ Compozabilitate expressii ``F``:
 
         F(lambda mod, func, locals: mod == "pylint.checkers.variables" or func.__name__ == "visit_lambda")
 
+Reference
+---------
+
+.. sourcecode:: python
+
+    install(
+        *filters,
+        module=None,
+        function=None,
+        action=None,
+    )
+
+Args:
+
+* ``*filters``: a list of predicates or ``F`` instances
+* ``module``: a `glob` expression to match the module name to. Eg: ``"*.variables"`` will match ``"foo.variables"`` and ``"pylint.checkers.variables"```.
+* ``module``: a `glob` expression to match the function name to.
+* ``action``: one of:
+
+  * a function taking arguments: ``module, function, locals``
+  * ``"break"`` - to break into pdb shell
+  * ``"print"`` - to print the frame
+  * ``"print:*"`` - to print the frame and all variables with names matching ``"*"`` (glob expression)
+  * ``"print:foobar"`` - to print the frame and variables with names matching ``"foobar"``
+
+.. sourcecode:: python
+
+    F(
+        predicate=None,
+        module=None,
+        function=None,
+        action=None,
+    )
+
+Args:
+
+* ``predicate``: a function taking arguments: ``module, function, locals``. If the function returns ``True`` then this ``F``ilter can match.
+* ``module``: a `glob` expression to match the module name to. Eg: ``"*.variables"`` will match ``"foo.variables"`` and ``"pylint.checkers.variables"```.
+* ``module``: a `glob` expression to match the function name to.
+* ``action``: one of:
+
+  * a function taking arguments: ``module, function, locals``
+  * ``"break"`` - to break into pdb shell
+  * ``"print"`` - to print the frame
+  * ``"print:*"`` - to print the frame and all variables with names matching ``"*"`` (glob expression)
+  * ``"print:foobar"`` - to print the frame and variables with names matching ``"foobar"``
 
 Dorinte pentru API
 --------------------
