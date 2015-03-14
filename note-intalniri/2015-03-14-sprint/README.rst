@@ -12,7 +12,9 @@ familiarizez cu codul din ``variables.py``. Din pacate codul e relativ voluminos
 keeping".
 
 Mi-am facut un tracer miniatura care printeaza tot ce se executa in ``variables.py``. Am modificat ``__main__.py`` sa
-aiba::
+aiba:
+
+.. sourcecode:: python
 
     def dumbtrace(frame, event, args):
         if "variables.py" in frame.f_code.co_filename:
