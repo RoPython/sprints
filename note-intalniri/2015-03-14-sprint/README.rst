@@ -83,11 +83,25 @@ Idee de "actiuni":
 
 Compozabilitate expressii ``F``:
 
-    ``F(module="pylint.checkers.variables") & F(function="visit_lambda")`` e acelasi lucru ca si
-    ``F(module="pylint.checkers.variables", function="visit_lambda")``.
+    "AND":
 
-    ``F(module="pylint.checkers.variables") | F(function="visit_lambda")`` e acelasi lucru ca si
-    ``F(lambda mod, func, locals: mod="pylint.checkers.variables" or func.__name__="visit_lambda")``.
+    .. sourcecode:: python
+
+        F(module="pylint.checkers.variables") & F(function="visit_lambda")
+
+        # e acelasi lucru ca si
+
+        F(module="pylint.checkers.variables", function="visit_lambda")
+
+    "OR":
+
+    .. sourcecode:: python
+
+        F(module="pylint.checkers.variables") | F(function="visit_lambda")
+
+        # e acelasi lucru ca si
+
+        F(lambda mod, func, locals: mod == "pylint.checkers.variables" or func.__name__ == "visit_lambda")
 
 
 Dorinte pentru API
