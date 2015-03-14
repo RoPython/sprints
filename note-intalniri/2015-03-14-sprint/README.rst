@@ -74,6 +74,8 @@ Idee de "actiuni":
     ) | F(
         function='visit_lambda',
         action='break'  # ca si alternativa la break_on
+        # sau: action=pdb.set_trace ?
+
     ) | F(
         function='visit_dictcomp',
         action=lambda module, function, locals: print(locals)  # ca si callback, similar cu idea de predicat
