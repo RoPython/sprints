@@ -15,7 +15,7 @@ Mi-am facut un tracer miniatura care printeaza tot ce se executa in ``variables.
 aiba::
 
     def dumbtrace(frame, event, args):
-        if 'variables.py' in frame.f_code.co_filename:
+        if "variables.py" in frame.f_code.co_filename:
             sys.stdout.write("%015s:%-3s %06s %s" % (
                 os.path.basename(frame.f_code.co_filename),
                 frame.f_lineno,
@@ -33,22 +33,22 @@ Idee de API pentru libraria tracerex (ca si arbore de decizie):
     from tracerex import trace, F
 
     install(F(
-        module='pylint.checkers.variables',
-        vars=['self']
+        module="pylint.checkers.variables",
+        action="print:self",
     ) | F(
-        function='visit_lambda',
-        vars=['node']
+        function="visit_lambda",
+        action="print:node"
     ))
 
 Idee de ``F`` ca si predicate syntactic sugar:
 
 .. sourcecode:: python
 
-    F(lambda module, function, locals: function.__name__ == 'visit_lambda'])
+    F(lambda module, function, locals: function.__name__ == "visit_lambda"])
 
     # echivalent cu
 
-    F(function='visit_lambda')
+    F(function="visit_lambda")
 
 Idee de la Claudiu, suport de breakpoints:
 
@@ -56,11 +56,11 @@ Idee de la Claudiu, suport de breakpoints:
 
     from tracerex import break_on
 
-    break_on(F(function='visit_lambda'))
+    break_on(F(function="visit_lambda"))
 
     # sau mai selectiv, cu un predicat
 
-    break_on(F(function='visit_lambda', predicate=lambda module, function, locals: locals['node'] == 'Foobar']))
+    break_on(F(function="visit_lambda", predicate=lambda module, function, locals: locals["node"] == "Foobar"]))
 
 Idee de "actiuni":
 
@@ -69,17 +69,26 @@ Idee de "actiuni":
     from tracerex import trace, F
 
     install(F(
-        module='pylint.checkers.variables',
-        action='print:self'  # ca si alternativa la vars
+        module="pylint.checkers.variables",
+        action="print:self"  # ca si alternativa la vars
     ) | F(
-        function='visit_lambda',
-        action='break'  # ca si alternativa la break_on
+        function="visit_lambda",
+        action="break"  # ca si alternativa la break_on
         # sau: action=pdb.set_trace ?
 
     ) | F(
-        function='visit_dictcomp',
+        function="visit_dictcomp",
         action=lambda module, function, locals: print(locals)  # ca si callback, similar cu idea de predicat
     ))
+
+Compozabilitate expressii ``F``:
+
+    ``F(module="pylint.checkers.variables") & F(function="visit_lambda")`` e acelasi lucru ca si
+    ``F(module="pylint.checkers.variables", function="visit_lambda")``.
+
+    ``F(module="pylint.checkers.variables") | F(function="visit_lambda")`` e acelasi lucru ca si
+    ``F(lambda mod, func, locals: mod="pylint.checkers.variables" or func.__name__="visit_lambda")``.
+
 
 Dorinte pentru API
 --------------------
