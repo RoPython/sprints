@@ -81,3 +81,30 @@ Idee de "actiuni":
         action=lambda module, function, locals: print(locals)  # ca si callback, similar cu idea de predicat
     ))
 
+Dorinte pentru API
+--------------------
+
+* Ortogonal: idea e ca API-ul sa ofere cateva interfete simple (filtre, actiuni etc) pe care utilizatorul sa le combine
+  incat sa obtina ceva. Scopul e sa fie ceva compozabil, nu multe functii specializate pe anumite usecaseuri.
+* Pe doua nivele ("layered API"): idea e ca api-ul sa ofere niste primitive care suporta 2 feluri de utilizare:
+
+  * DSL bazat pe text. Ex: ``F(function="visit_lambda")``, ``F(action="print")``.
+
+    Limitarile sunt evidente dar e nevoie de el pentru ca:
+
+    * utilizatorii sa nu fie nevoiti sa scrie cod pentru scenariile simple
+    * sa se poata incarca dintr-un fisier/string de configuratie (unde nu poate sa existe cod) - vezi idea de activare.
+
+  * DSL-ul bazat pe text este intermixabil cu primitive low-level (callbacks): predicate si actiuni.
+
+    Efectiv, ``F(function="visit_lambda")`` este doar syntactic sugar la ``F(lambda mod, func, locals: func ==
+    "visit_lambda")``
+
+Idei de activare
+----------------
+
+Activare prin ``.pth`` + env var::
+
+    pip install tracerex
+
+    PYTHON_TRACEREX="??? ceva config ???" my_buggy_app
