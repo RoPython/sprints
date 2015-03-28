@@ -24,15 +24,11 @@ Issues ușoare
 
 
 * https://bitbucket.org/logilab/pylint/issue/431/arguments-differ-should-allow-addition-of
-assigned to: vtemian
 
   Trebuie  adăugat un flag prin care argumentele opționale să nu fie luate în  considerare atunci
   când se verifică checkul arguments-differ (dacă o  funcție A are doi parametri a și b, atunci o
   funcție dintr-o subclasă B  ar trebui să aibă aceeași parametri ca principiul LSP să fie respectat.
   Dacă a doua funcție are în schimb argumente opționale, în cel mai bun  caz putem ignora acest lucru printr-un flag)
-
-
-* https://bitbucket.org/logilab/pylint/issue/96/color-on-windows-cmd-prompt
 
 
 * https://bitbucket.org/logilab/pylint/issue/253/a-checker-that-verifies-that-__deepcopy__
@@ -49,14 +45,6 @@ assigned to: vtemian
 
 * https://bitbucket.org/logilab/pylint/issue/367/tries-to-open-emacs-locks
 
-* https://bitbucket.org/logilab/pylint/issue/388/promote-a-couple-of-warnings
-
-  Warning-urile  respective pot fi upgradate la erori.
-  Asta înseamnă că din Wxxx devin  Exxx. Pentru că trebuie menținută compatibilitatea cu versiunile  precedente,
-  mesajele noi trebuie să aibă intrarea old_names cu numele  vechi.
-  Un exemplu: https://bitbucket.org/logilab/pylint/src/9e46aa88e650dae51696d3fbccade9914b9b3a3f/checkers/python3.py?at=default#cl-220
-  Totodată, ar trebui să avem și teste pentru mesajele schimbate.
-
 * https://bitbucket.org/logilab/astroid/issue/68/add-tests-for-the-brain-plugins
 
   Nu  toate pluginurile de astroid brain sunt testate. Ar trebui adăugate  teste care să valideze
@@ -67,19 +55,6 @@ assigned to: vtemian
 
   Anumite mesaje nu trebuie emise dacă clasa în care se află metoda sau atributul respectiv este un Mixin.
 
-* https://bitbucket.org/logilab/pylint/issue/449/require-or-allow-providing-justification
-
-  Trebuie adăugat suport pentru posibilitatea de a continua un pragma message cu ;.
-  Următoarele trebuie permise::
-
-      # pylint: disable=msg
-      # pylint: disable=msg;
-
-  Practic, găsirea unui pragma message se va opri după primul ; găsit sau la finalul liniei, astfel încât,
-  utliizatorii care doresc, pot continua linia cu un mesaj de justificare.
-
-  duplicate: https://bitbucket.org/logilab/pylint/issue/216/would-like-to-be-able-to-put-additional
-
 * https://bitbucket.org/logilab/pylint/issue/104/add-switch-to-change-column-offset-from-0
 
 * https://bitbucket.org/logilab/pylint/issue/81/pyreverse-detect-propertys-as-class
@@ -89,12 +64,6 @@ assigned to: vtemian
   să fie detectate ca atribute, nu funcții.
 
 * https://bitbucket.org/logilab/pylint/issue/420/html-report-unicodeencodeerror
-
-* https://bitbucket.org/logilab/pylint/issue/215/document-msg-template-as-replacement-for
-
-* https://bitbucket.org/logilab/pylint/issue/379/installing-pylint-via-setuptools-as-a
-
-  Trebuie investigată folosirea opțiunii data_files pentru instalarea testelor.
 
 
 Alte functionalități dorite (și alte issues mai grele)
@@ -198,12 +167,6 @@ Alte functionalități dorite (și alte issues mai grele)
   Astfel, acest nou brain tip trebuie să adauge în modulul appengine.ext.ndb acele elemente locale
   care nu pot fi detectate.
 
-* https://bitbucket.org/logilab/pylint/issue/456/parallel-jobs-dont-work-with-custom
-
-  pylint suportă distribuire pe mai multe procese, cu flagul --jobs. Momentan, în cadrul
-  acestei distribuiri, nu se ține cont de pluginurile custom pasate la linia de comandă.
-  Trebuie investigat dacă putem suport acest lucru și dacă da, să adăugăm
-  suport pentru această funcționalitate.
 
 * https://bitbucket.org/logilab/pylint/issue/272/anomalous-backslash-in-string-for-raw
 
@@ -233,7 +196,6 @@ Alte functionalități dorite (și alte issues mai grele)
   metaclasa setată explicit. Însă dacă știm că nodul clasă în cauză este new style class,
   atunci putem să ne uităm după valori din type.
   
-* Trebuie scoase mesajele star-args, abstract-class-little-referenced, abstract-class-not-referenced.  
 
 
 Rezolvate
