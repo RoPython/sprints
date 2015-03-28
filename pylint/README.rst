@@ -21,6 +21,14 @@ Issues ușoare
   - adăugăm un pylintrc în repo, care să aibă toate mesajele dezactivate
   - rezolvăm toate problemele de un anumit tip, de ex. trailing-whitespaces
   - activăm mesajul în pylintrc
+  
+* https://bitbucket.org/logilab/pylint/issue/131/no-member-error-on-manager-queue
+
+astroid brain tip pentru multiprocessing.Manager
+
+Pylint nu poate înțelege felul în care sunt adăugate atributele în multiprocessing.Manager aici: https://hg.python.org/cpython/file/0850452048ec/Lib/multiprocessing/managers.py#l1097
+Trebuie adăugat un astroid brain tip, similar cu ce avem deja pentru nose și alte biblioteci, care să
+genereze static membrii așteptați pentru un multiprocessing.Manager.
 
 
 * https://bitbucket.org/logilab/pylint/issue/431/arguments-differ-should-allow-addition-of
