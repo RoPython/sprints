@@ -77,6 +77,11 @@ genereze static membrii așteptați pentru un multiprocessing.Manager.
 Alte functionalități dorite (și alte issues mai grele)
 ------------------------------------------------------
 
+- https://bitbucket.org/logilab/pylint/issue/144/no-error-raised-when-keyword-only-argument
+
+  Trebuie adăugat un checker care să verifice dacă toate argumentele sunt pasate la crearea unei clase. Checkerul
+  respectiv ar trebui să fie activat pentru Python 3.0+.
+  
 - portarea testelor funcționale pe noua platformă
 
   Avem două modalități de a face teste funcționale, prima oară în pylint.test.input e varianta veche,
