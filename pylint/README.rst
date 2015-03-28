@@ -22,6 +22,11 @@ Issues ușoare
   - rezolvăm toate problemele de un anumit tip, de ex. trailing-whitespaces
   - activăm mesajul în pylintrc
   
+* https://bitbucket.org/logilab/pylint/issue/225/do-not-raise-no-self-use-or-unused
+
+Trebuie adăugat un flag sau să fie comportament default prin care pylint să nu mai
+emită un unused-argument dacă metoda respectivă este un API din cadrul unei superclase.
+  
 * https://bitbucket.org/logilab/pylint/issue/131/no-member-error-on-manager-queue
 
 astroid brain tip pentru multiprocessing.Manager
