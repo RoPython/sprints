@@ -14,7 +14,6 @@ Echipa
         * În Timișoara o să vorbim cu Vlad Temian
         * Pentru București vom trimite un mail comunității ROSEdu și vom discuta cu Alex Palcuie (eventual cu Robert Dolca)
 3. Folosirea unui concept de workgroup
-
 Echipa implicată în organizarea PyCon se va împărți în următoarele grupuri:
 
 * Program (prezentări, sprinturi, keynotes etc.)
